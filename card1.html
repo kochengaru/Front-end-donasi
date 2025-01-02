@@ -23,11 +23,18 @@
           <!-- Gambar -->
           <div 
             id="image-container" 
-            class="lg:w-1/2"
+            class="lg:w-1/2 flex flex-col items-center gap-4"
             data-visible="false"
           >
             <img src="img/bencana.jpg" alt="Bencana Alam" class="rounded-lg shadow-lg object-cover w-full h-64 lg:h-80">
+            <!-- Informasi Donasi -->
+            <div class="bg-white p-4 border border-gray-300 rounded-lg shadow-lg w-full">
+              <p class="text-gray-600 text-sm text-center">
+                <strong>afdbssdbad@gmail.com</strong> telah memberikan donasi <strong>Rp. 151.863.141</strong>.
+              </p>
+            </div>
           </div>
+
           <!-- Deskripsi -->
           <div 
             id="text-container" 
@@ -47,9 +54,12 @@
             <p class="text-gray-600 mt-4">
               Saat ini, bantuan berupa makanan, pakaian, dan kebutuhan darurat lainnya sangat dibutuhkan untuk membantu para korban. Mari kita ulurkan tangan untuk meringankan beban mereka.
             </p>
-            <button class="mt-6 bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-all">
-              Donasi Sekarang
-            </button>
+            <a href="form_donasi.html">
+              <button class="mt-6 bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-all">
+                Donasi Sekarang
+              </button>
+            </a>
+            
           </div>
         </div>
       </section>
