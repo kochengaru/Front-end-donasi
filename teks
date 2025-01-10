@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deskripsi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="bg-gray-100 py-8">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
+          <!-- Gambar -->
+          <div class="lg:w-1/2">
+            <img src="img/bencana.jpg" alt="Bencana Alam" class="rounded-lg shadow-lg object-cover w-full h-64 lg:h-80">
+          </div>
+          <!-- Deskripsi -->
+          <div class="lg:w-1/2">
+            <h2 class="text-2xl font-bold text-blue-700 mb-4">Kisah Bencana Alam di Kabupaten XYZ</h2>
+            <p class="text-gray-600 text-justify leading-relaxed mb-4">
+              Pada tanggal 15 November 2024, Kabupaten XYZ dilanda banjir bandang akibat hujan deras yang turun selama lebih dari 12 jam. Puluhan rumah warga terendam air setinggi 2 meter, dan ratusan jiwa terpaksa mengungsi ke tempat yang lebih aman.
+            </p>
+            <h3 class="text-lg font-semibold text-blue-700 mb-2">Kronologi Kejadian:</h3>
+            <ul class="list-disc list-inside text-gray-600 leading-relaxed">
+              <li>15 November 2024, pukul 02:00: Hujan deras mulai mengguyur wilayah Kabupaten XYZ.</li>
+              <li>15 November 2024, pukul 07:00: Air sungai meluap dan mulai membanjiri permukiman warga.</li>
+              <li>15 November 2024, pukul 10:00: Warga dievakuasi ke posko darurat oleh tim penyelamat.</li>
+            </ul>
+            <p class="text-gray-600 mt-4">
+              Saat ini, bantuan berupa makanan, pakaian, dan kebutuhan darurat lainnya sangat dibutuhkan untuk membantu para korban. Mari kita ulurkan tangan untuk meringankan beban mereka.
+            </p>
+            <button class="mt-6 bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-all">
+              Donasi Sekarang
+            </button>
+          </div>
+        </div>
+      </section>
+      
+</body>
+</html>
