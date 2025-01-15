@@ -29,6 +29,30 @@ const donasiContainer = document.getElementById('donasi-list');
 const categoryButtons = document.querySelectorAll('.category-btn');
 
 // Fungsi untuk membuat elemen donasi
+// const createDonasiCard = (data, category, index) => {
+//   return `
+//     <div class="flex items-center bg-white shadow p-4 rounded-lg">
+//       <img src="${data.img}" alt="${data.title}" class="w-60 h-40 object-cover rounded-md">
+//       <div class="ml-4 flex-grow">
+//         <h3 class="text-lg font-bold">${data.title}</h3>
+//         <p class="text-gray-600 text-sm">Target Donasi: ${data.target}</p>
+//         <p class="text-sm text-gray-600">Fundraiser: ${data.Fundraiser}</p>
+//         <!-- Persentase Progres -->
+//         <div class="mt-2">
+//           <p class="text-gray-600 text-sm">Progress: ${data.progress}%</p>
+//           <div class="w-full bg-gray-200 rounded-full h-2">
+//             <div class="bg-blue-500 h-2 rounded-full" style="width: ${data.progress}%"></div>
+//           </div>
+//         </div>
+//       </div>
+//       <button 
+//           class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 ml-4" 
+//           onclick="showDetail('${category}', ${index})">
+//           Lihat Detail
+//         </button>
+//     </div>
+//   `;
+// };
 const createDonasiCard = (data, category, index) => {
   return `
     <div class="flex items-center bg-white shadow p-4 rounded-lg">
@@ -37,7 +61,6 @@ const createDonasiCard = (data, category, index) => {
         <h3 class="text-lg font-bold">${data.title}</h3>
         <p class="text-gray-600 text-sm">Target Donasi: ${data.target}</p>
         <p class="text-sm text-gray-600">Fundraiser: ${data.Fundraiser}</p>
-        <!-- Persentase Progres -->
         <div class="mt-2">
           <p class="text-gray-600 text-sm">Progress: ${data.progress}%</p>
           <div class="w-full bg-gray-200 rounded-full h-2">
@@ -49,10 +72,11 @@ const createDonasiCard = (data, category, index) => {
           class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 ml-4" 
           onclick="showDetail('${category}', ${index})">
           Lihat Detail
-        </button>
+      </button>
     </div>
   `;
 };
+
 
 // Fungsi untuk merender data donasi
 const renderDonasi = (category) => {
@@ -72,3 +96,11 @@ categoryButtons.forEach(button => {
 
 // Render kategori default (pendidikan)
 renderDonasi('pendidikan');
+
+function showDetail(category, index) {
+  // Log untuk debugging
+  console.log('Navigating to detail page with:', { category, index });
+
+  // Navigasi ke halaman detail
+  window.location.href = `detail.html?category=${category}&index=${index}`;
+}
