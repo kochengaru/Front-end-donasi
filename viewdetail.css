@@ -1,0 +1,10 @@
+.zoom-in {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  }
+
+  .zoom-in.visible {
+    transform: scale(1);
+    opacity: 1;
+  }
