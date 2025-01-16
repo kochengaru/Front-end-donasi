@@ -1,0 +1,81 @@
+/* .slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .slideshow .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slideshow .slide.active {
+    opacity: 1;
+  }
+   */
+
+/* Container untuk slider */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; /* Sesuaikan dengan kebutuhan */
+}
+
+/* Wrapper untuk slide */
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Wajib diatur ulang oleh JS */
+}
+
+/* Setiap slide */
+.slide {
+  min-width: 100%;
+  height: 100vh;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Navigasi Slider */
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slider-nav button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-nav button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* video */
+/* video {
+  background-image: url('path/to/fallback-image.jpg');
+  background-size: cover;
+  background-position: center;
+} */

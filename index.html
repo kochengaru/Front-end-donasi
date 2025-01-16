@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bg-gerak.css">
   <link rel="stylesheet" href="donasi_card.css">
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
@@ -55,19 +56,29 @@
   </div>
 </header>
 
-  <!-- Hero Section -->
-  <section class="relative bg-gray-200 h-[calc(100vh-64px)]">
-    <img src="img/wllpper2.jpg" alt="Background" class="w-full h-full object-cover">
-    <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white p-6">
-      <div data-aos="zoom-in" data-aos-duration="1000">
-        <h2 class="text-3xl font-bold">MARI DONASI</h2>
-        <p class="text-lg font-semibold">YOUR FRIEND NEEDS HELP</p>
-        <p class="mt-2 max-w-xl">
-          "Mari Donasi" adalah platform donasi online yang bertujuan untuk mempermudah masyarakat dalam menyalurkan bantuan kepada yang membutuhkan. Kami percaya bahwa setiap kontribusi, sekecil apa pun, dapat membawa perubahan besar bagi mereka yang membutuhkan.
-        </p>
-      </div>
+<!-- section bergerak -->
+<section class=" slider-container relative bg-gray-200 h-[calc(100vh-64px)] overflow-hidden">
+  <div class="slider-wrapper">
+    <div class="slide"><img src="img/bg1.jpg" alt="Wallpaper 1"></div>
+    <div class="slide"><img src="img/bg2.jpg" alt="Wallpaper 2"></div>
+    <div class="slide"><img src="img/bg3.jpg" alt="Wallpaper 3"></div>
+    <div class="slide"><img src="img/bg4.jpeg" alt="Wallpaper 4"></div>
+  </div>
+  <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white p-6">
+    <div data-aos="zoom-in" data-aos-duration="1000">
+      <h2 class="text-3xl font-bold">MARI DONASI</h2>
+      <p class="text-lg font-semibold">YOUR FRIEND NEEDS HELP</p>
+      <p class="mt-2 max-w-xl">
+        "Mari Donasi" adalah platform donasi online yang bertujuan untuk mempermudah masyarakat dalam menyalurkan bantuan kepada yang membutuhkan. Kami percaya bahwa setiap kontribusi, sekecil apa pun, dapat membawa perubahan besar bagi mereka yang membutuhkan.
+      </p>
     </div>
-  </section>
+  </div>
+  <!-- Navigasi Slider -->
+  <div class="slider-nav">
+    <button class="prev">&larr;</button>
+    <button class="next">&rarr;</button>
+  </div>
+</section>
 
                                                           <!-- PENGGALANGAN DANA MENDESAK -->
 
@@ -336,6 +347,7 @@
 <script src="js/duplikatdonasi.js"></script>
 <script src="js/documentzoom.js"></script>
 <script src="js/renderdonasi.js"></script>
+<script src="js/bg-gerak.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
   AOS.init({
